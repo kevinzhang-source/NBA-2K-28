@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://dptcpju4pyn21"]
+
+[ext_resource type="Texture2D" uid="uid://b6u77klopimxq" path="res://Retro Pixel Basketball Player Dribbling.png" id="1_skf4x"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_c0nl8"]
+size = Vector2(81, 117)
+
+[node name="Area2D" type="Area2D" unique_id=1960428256]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1746106565]
+position = Vector2(-4.5, -1.5)
+shape = SubResource("RectangleShape2D_c0nl8")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1078797757]
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("1_skf4x")
