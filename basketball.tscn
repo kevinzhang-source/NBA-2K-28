@@ -1,11 +1,13 @@
 [gd_scene format=3 uid="uid://s1doghgjedt6"]
 
 [ext_resource type="Texture2D" uid="uid://bxuk8gg0pkb7r" path="res://Pixel Art Basketball Icon.png" id="1_512qa"]
+[ext_resource type="Script" uid="uid://bxj2gjadfnsmi" path="res://basketball.gd" id="1_impb6"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_sjbvo"]
 radius = 18.0
 
 [node name="Area2D" type="Area2D" unique_id=1669249256]
+script = ExtResource("1_impb6")
 metadata/_edit_vertical_guides_ = [18.0]
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=865132703]
