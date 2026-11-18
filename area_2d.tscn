@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://ceww7y5rlks20"]
+
+[ext_resource type="PackedScene" uid="uid://dptcpju4pyn21" path="res://Player_1.tscn" id="1_gf172"]
+
+[node name="Area2D" unique_id=1960428256 instance=ExtResource("1_gf172")]
+
+[node name="Sprite2D" parent="." index="1" unique_id=1078797757]
+position = Vector2(-3.3, -2.4750001)
+scale = Vector2(0.09496951, 0.09587156)
