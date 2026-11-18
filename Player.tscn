@@ -1,23 +1,5 @@
 [gd_scene format=3 uid="uid://dptcpju4pyn21"]
 
-[ext_resource type="Texture2D" uid="uid://crga3rf4k50h6" path="res://Pixel Basketball Defender #78.png" id="1_xhfnw"]
+[ext_resource type="PackedScene" uid="uid://dptcpju4pyn21" path="res://Player.tscn" id="1_xhfnw"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_c0nl8"]
-size = Vector2(69, 111)
-
-[node name="Area2D" type="Area2D" unique_id=1960428256]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1746106565]
-position = Vector2(3.5, -0.5)
-shape = SubResource("RectangleShape2D_c0nl8")
-
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1078797757]
-position = Vector2(0, -5.2452087e-06)
-scale = Vector2(0.07, 0.0813124)
-texture = ExtResource("1_xhfnw")
-
-[node name="ProgressBar" type="ProgressBar" parent="." unique_id=340233116]
-offset_left = 43.0
-offset_top = -37.0
-offset_right = 65.0
-offset_bottom = 36.0
+[node name="Area2D" unique_id=1960428256 instance=ExtResource("1_xhfnw")]
