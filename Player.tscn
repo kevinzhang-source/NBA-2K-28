@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://dptcpju4pyn21"]
+
+[ext_resource type="PackedScene" uid="uid://dptcpju4pyn21" path="res://Player.tscn" id="1_xhfnw"]
+
+[node name="Area2D" unique_id=1960428256 instance=ExtResource("1_xhfnw")]
