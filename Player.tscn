@@ -1,10 +1,13 @@
 [gd_scene format=3 uid="uid://dptcpju4pyn21"]
 
 [ext_resource type="Texture2D" uid="uid://crga3rf4k50h6" path="res://Pixel Basketball Defender #78.png" id="1_xhfnw"]
+[ext_resource type="Script" uid="uid://dj43g6eom0i1n" path="res://player.gd" id="2_kne1u"]
+[ext_resource type="Script" uid="uid://b38lgt047fe4q" path="res://charging_bar.gd" id="3_e80uo"]
 
 [node name="Sprite2D" type="Sprite2D" unique_id=1718142523]
 scale = Vector2(0.07, 0.07)
 texture = ExtResource("1_xhfnw")
+script = ExtResource("2_kne1u")
 
 [node name="ProgressBar" type="ProgressBar" parent="." unique_id=1329376445]
 anchors_preset = -1
@@ -17,3 +20,4 @@ offset_top = -629.7812
 offset_right = 990.28143
 offset_bottom = -575.29004
 scale = Vector2(0.8463167, 0.9756165)
+script = ExtResource("3_e80uo")

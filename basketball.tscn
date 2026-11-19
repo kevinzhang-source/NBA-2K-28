@@ -4,15 +4,14 @@
 [ext_resource type="Script" uid="uid://bxj2gjadfnsmi" path="res://basketball.gd" id="1_impb6"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_sjbvo"]
-radius = 18.0
+radius = 6.0
 
 [node name="Area2D" type="Area2D" unique_id=1669249256]
 script = ExtResource("1_impb6")
 metadata/_edit_vertical_guides_ = [18.0]
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=865132703]
-position = Vector2(4.7683716e-07, 0)
-scale = Vector2(0.03, 0.03)
+scale = Vector2(0.01, 0.01)
 texture = ExtResource("1_512qa")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1582560831]
