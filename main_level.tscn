@@ -6,7 +6,7 @@
 [node name="Main_level" type="Node2D" unique_id=1029795723]
 
 [node name="Sprite2D" parent="." unique_id=1718142523 instance=ExtResource("1_6614m")]
-position = Vector2(196, 125)
+position = Vector2(527, 292)
 
 [node name="Area2D" parent="." unique_id=1669249256 instance=ExtResource("2_bhu08")]
-position = Vector2(167, 144)
+position = Vector2(500, 312)
