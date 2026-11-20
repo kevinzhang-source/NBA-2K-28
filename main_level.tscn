@@ -22,7 +22,7 @@ distance = -94.0
 [node name="Main_level" type="Node2D" unique_id=1029795723]
 
 [node name="Sprite2D" parent="." unique_id=1718142523 instance=ExtResource("1_6614m")]
-position = Vector2(163, 122)
+position = Vector2(523, 601)
 
 [node name="Area2D" parent="." unique_id=1669249256 instance=ExtResource("2_bhu08")]
 z_index = 1
@@ -47,4 +47,4 @@ position = Vector2(1058, 493)
 shape = SubResource("WorldBoundaryShape2D_fly2q")
 
 [node name="Node2D" parent="." unique_id=914947035 instance=ExtResource("3_bhu08")]
-position = Vector2(74, 177)
+position = Vector2(73, 279)
