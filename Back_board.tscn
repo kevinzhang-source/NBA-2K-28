@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://bkeddgqyybyeu"]
+
+[ext_resource type="Texture2D" uid="uid://b0ljxitoeekwu" path="res://Gemini_Generated_Image_ahfe3oahfe3oahfe-removebg-preview.png" id="1_7ecjd"]
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_sjbvo"]
+a = Vector2(29, 33)
+b = Vector2(-28, 33)
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_npegf"]
+radius = 4.0
+height = 14.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_vauxe"]
+height = 96.0
+
+[node name="Node2D" type="Node2D" unique_id=914947035]
+
+[node name="Area2D" type="Area2D" parent="." unique_id=718671541]
+
+[node name="Shot_observer" type="CollisionShape2D" parent="Area2D" unique_id=1731341132]
+position = Vector2(40, -15)
+shape = SubResource("SegmentShape2D_sjbvo")
+one_way_collision = true
+one_way_collision_direction = Vector2(0, -1)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1791348102]
+
+[node name="Rim_front" type="CollisionShape2D" parent="StaticBody2D" unique_id=1044159588]
+position = Vector2(69, 18)
+shape = SubResource("CapsuleShape2D_npegf")
+
+[node name="Rim_back" type="CollisionShape2D" parent="StaticBody2D" unique_id=609376568]
+position = Vector2(12, 18)
+shape = SubResource("CapsuleShape2D_npegf")
+
+[node name="Back_board" type="CollisionShape2D" parent="StaticBody2D" unique_id=1907152390]
+position = Vector2(-10, -23)
+shape = SubResource("CapsuleShape2D_vauxe")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1825814085]
+scale = Vector2(-0.5, 0.5)
+texture = ExtResource("1_7ecjd")

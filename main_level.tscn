@@ -2,11 +2,49 @@
 
 [ext_resource type="PackedScene" uid="uid://dptcpju4pyn21" path="res://Player.tscn" id="1_6614m"]
 [ext_resource type="PackedScene" uid="uid://s1doghgjedt6" path="res://basketball.tscn" id="2_bhu08"]
+[ext_resource type="PackedScene" uid="uid://bkeddgqyybyeu" path="res://Back_board.tscn" id="3_bhu08"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_sjbvo"]
+normal = Vector2(1, 0)
+distance = -16.0
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_6pysx"]
+distance = -645.0
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_npegf"]
+normal = Vector2(0, 1)
+distance = -5.0
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_fly2q"]
+normal = Vector2(-1, 0)
+distance = -94.0
 
 [node name="Main_level" type="Node2D" unique_id=1029795723]
 
 [node name="Sprite2D" parent="." unique_id=1718142523 instance=ExtResource("1_6614m")]
-position = Vector2(527, 292)
+position = Vector2(163, 122)
 
 [node name="Area2D" parent="." unique_id=1669249256 instance=ExtResource("2_bhu08")]
-position = Vector2(500, 312)
+z_index = 1
+position = Vector2(85, 61)
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=1992863917]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1535764116]
+position = Vector2(16, 0)
+shape = SubResource("WorldBoundaryShape2D_sjbvo")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D" unique_id=1153388264]
+position = Vector2(-16, 3)
+shape = SubResource("WorldBoundaryShape2D_6pysx")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D" unique_id=918511193]
+position = Vector2(970, 5)
+shape = SubResource("WorldBoundaryShape2D_npegf")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D" unique_id=1807190692]
+position = Vector2(1058, 493)
+shape = SubResource("WorldBoundaryShape2D_fly2q")
+
+[node name="Node2D" parent="." unique_id=914947035 instance=ExtResource("3_bhu08")]
+position = Vector2(74, 177)
